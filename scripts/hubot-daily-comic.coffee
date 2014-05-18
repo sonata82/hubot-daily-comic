@@ -1,5 +1,5 @@
 # Description:
-#   hubot-daily-comic
+#   This script will automatically fetch the daily Dilbert and xkcd and announce the urls in a configured list of rooms.
 #
 # Dependencies:
 #   "daily-comic": "0.0.4"

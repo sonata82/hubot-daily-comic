@@ -1,9 +1,11 @@
 {
   "name": "hubot-daily-comic",
   "version": "0.0.1",
-  "description": "Hubot script using daily-comis.js",
-  "main": "hubot-daily-comic",
-  "author": "Remko Plantenga",
+  "description": "A hubot script that will automatically fetch the daily Dilbert and xkcd",
+  "main": "index",
+  "author": {
+      "name": "Remko Plantenga"
+  },
   "license": "GNU GPL v3",
   "dependencies": {
     "daily-comic.js": "0.0.4"

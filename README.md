@@ -7,7 +7,7 @@ Installing
 ----------
 Add using npm
 
-    install hubot-daily-comic
+    npm install hubot-daily-comic
 
 and add to your `external-scripts.json`:
 

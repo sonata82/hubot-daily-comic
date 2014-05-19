@@ -9,7 +9,15 @@ Add using npm
 
     npm install hubot-daily-comic
 
-and add to your `external-scripts.json`:
+Or via the `package.json`:
+
+     "dependencies": {
+           ... 
+           "hubot-daily-comic": "latest",
+           ...
+    }
+
+then be sure to add to your `external-scripts.json`:
 
     [
         ...
@@ -17,4 +25,8 @@ and add to your `external-scripts.json`:
         ...
     ]
 
-Done!
+Configuration
+-------------
+
+HUBOT_ANNOUNCE_ROOMS - A comma separated list of rooms to announce new comics
+HUBOT_DAILY_COMIC_INTERVAL - Number of seconds between checking for new comics (default is 6 hours)

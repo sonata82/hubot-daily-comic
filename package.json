@@ -4,10 +4,21 @@
   "description": "A hubot script that will automatically fetch the daily Dilbert and xkcd",
   "main": "index",
   "author": {
-      "name": "Remko Plantenga"
+    "name": "Remko Plantenga"
   },
   "license": "GNU GPL v3",
   "dependencies": {
+    "coffee-script": "^1.7.1",
     "daily-comic.js": "0.0.4"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.19.0",
+    "sinon": "^1.10.0",
+    "sinon-chai": "^2.5.0",
+    "require-subvert": "0.0.3"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register"
   }
 }

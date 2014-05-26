@@ -3,6 +3,8 @@ hubot-daily-comic
 A hubot script that will automatically fetch the daily Dilbert and xkcd and announce the urls in a configured list of
 rooms.
 
+[![Build Status](https://travis-ci.org/sonata82/hubot-daily-comic.svg)](https://travis-ci.org/sonata82/hubot-daily-comic)
+
 Installing
 ----------
 Add using npm

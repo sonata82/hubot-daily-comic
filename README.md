@@ -4,6 +4,7 @@ A hubot script that will automatically fetch the daily Dilbert and xkcd and anno
 rooms.
 
 [![Build Status](https://travis-ci.org/sonata82/hubot-daily-comic.svg)](https://travis-ci.org/sonata82/hubot-daily-comic)
+[![Coverage Status](https://coveralls.io/repos/sonata82/hubot-daily-comic/badge.svg?branch=master)](https://coveralls.io/repos/sonata82/hubot-daily-comic/badge.svg?branch=master)
 
 Installing
 ----------

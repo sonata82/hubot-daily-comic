@@ -7,18 +7,33 @@
     "name": "Remko Plantenga"
   },
   "license": "GNU GPL v3",
+  "keywords": [
+    "hubot-scripts",
+    "comic",
+    "dilbert",
+    "xkcd"
+  ],
   "dependencies": {
     "coffee-script": "^1.7.1",
     "daily-comic.js": "0.0.4"
   },
   "devDependencies": {
     "chai": "^1.9.1",
-    "mocha": "^1.19.0",
+    "grunt": "^0.4.5",
+    "grunt-mocha-cov": "^0.3.0",
+    "mocha-term-cov-reporter": "^0.2.0",
+    "require-subvert": "^0.0.3",
     "sinon": "^1.10.0",
-    "sinon-chai": "^2.5.0",
-    "require-subvert": "0.0.3"
+    "sinon-chai": "^2.5.0"
+  },
+  "config": {
+    "blanket": {
+      "loader": "./node-loaders/coffee-script",
+      "pattern": "src",
+      "data-cover-never": "node_modules"
+    }
   },
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script/register"
+    "test": "grunt travis"
   }
 }

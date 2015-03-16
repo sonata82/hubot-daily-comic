@@ -5,6 +5,7 @@ rooms.
 
 [![Build Status](https://travis-ci.org/sonata82/hubot-daily-comic.svg)](https://travis-ci.org/sonata82/hubot-daily-comic)
 [![Coverage Status](https://coveralls.io/repos/sonata82/hubot-daily-comic/badge.svg?branch=master)](https://coveralls.io/r/sonata82/hubot-daily-comic?branch=master)
+[![Dependency Status](https://gemnasium.com/sonata82/hubot-daily-comic.svg)](https://gemnasium.com/sonata82/hubot-daily-comic)
 
 Installing
 ----------

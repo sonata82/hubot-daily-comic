@@ -28,6 +28,9 @@ module.exports = (robot) ->
       for room in allRooms
         robot.messageRoom room, "new #{ comic }: #{ data.url }"
 
+  comic.on "error", (e) ->
+    robot.logger.error e
+
   robot.respond /((show|fetch)( me )?)?(xkcd|dilbert)/i, (msg) ->
     name = msg.match[4]
     cmc = comic.get name

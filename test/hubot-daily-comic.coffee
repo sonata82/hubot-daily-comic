@@ -13,6 +13,8 @@ describe 'hubot-daily-comic', ->
     @robot =
       respond: sinon.spy()
       messageRoom: sinon.spy()
+      logger:
+        error: sinon.spy()
 
     @stub = sinon.createStubInstance(DailyComic)
     requireSubvert.subvert 'daily-comic.js', sinon.stub().returns(@stub)
@@ -29,8 +31,8 @@ describe 'hubot-daily-comic', ->
   it 'registers a respond listener', ->
     expect(@robot.respond).to.have.been.calledOnce
 
-  it 'registers a listener with daily-comic', ->
-    expect(@stub.on).to.have.been.calledOnce
+  it 'registers two listeners with daily-comic', ->
+    expect(@stub.on).to.have.been.calledTwice
 
   it 'retrieves the comic and responds with the url', ->
     @stub.get = sinon.stub().returns({url: 'someurl'})
@@ -55,3 +57,9 @@ describe 'hubot-daily-comic', ->
     cb('somecomic', {url: 'someurl'})
 
     expect(@robot.messageRoom).to.have.been.calledWithMatch(sinon.match('someroom'), sinon.match('someurl'))
+
+  it 'logs an error to the robot logger', ->
+    cb = @stub.on.secondCall.args[1]
+    cb('someError')
+
+    expect(@robot.logger.error).to.have.been.calledWith('someError')

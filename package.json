@@ -1,6 +1,6 @@
 {
   "name": "hubot-daily-comic",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A hubot script that will automatically fetch the daily Dilbert and xkcd",
   "main": "index",
   "author": {

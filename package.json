@@ -1,6 +1,6 @@
 {
   "name": "hubot-daily-comic",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A hubot script that will automatically fetch the daily Dilbert and xkcd",
   "main": "index",
   "author": {
@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "coffee-script": "^1.7.1",
-    "daily-comic.js": "git+https://sonata82@github.com/sonata82/daily-comic.js.git#lock-request-dep"
+    "daily-comic.js": "git+https://sonata82@github.com/sonata82/daily-comic.js.git#urls-without-scheme"
   },
   "devDependencies": {
     "chai": "^1.9.1",

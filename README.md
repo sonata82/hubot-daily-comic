@@ -3,9 +3,9 @@ hubot-daily-comic
 A hubot script that will automatically fetch the daily Dilbert and xkcd and announce the urls in a configured list of
 rooms.
 
+[![Npm](https://img.shields.io/npm/v/hubot-daily-comic.svg)](https://www.npmjs.com/package/hubot-daily-comic)
 [![Build Status](https://travis-ci.org/sonata82/hubot-daily-comic.svg)](https://travis-ci.org/sonata82/hubot-daily-comic)
 [![Coverage Status](https://coveralls.io/repos/sonata82/hubot-daily-comic/badge.svg?branch=master)](https://coveralls.io/r/sonata82/hubot-daily-comic?branch=master)
-[![Dependency Status](https://gemnasium.com/sonata82/hubot-daily-comic.svg)](https://gemnasium.com/sonata82/hubot-daily-comic)
 
 Installing
 ----------
@@ -32,5 +32,5 @@ then be sure to add to your `external-scripts.json`:
 Configuration
 -------------
 
-HUBOT_ANNOUNCE_ROOMS - A comma separated list of rooms to announce new comics
+HUBOT_ANNOUNCE_ROOMS - A comma separated list of rooms to announce new comics  
 HUBOT_DAILY_COMIC_INTERVAL - Number of seconds between checking for new comics (default is 6 hours)
